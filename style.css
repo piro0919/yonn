@@ -13,6 +13,14 @@
   margin: 36px 0;
 }
 
+.site-name {
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+
 .profile-image-container {
   height: 84px;
   width: 84px;
@@ -48,7 +56,7 @@
 .list {
   list-style: none;
   display: grid;
-  gap: 12px;
+  gap: 18px;
   padding: 0;
   margin: 0;
 }
@@ -102,7 +110,12 @@
   width: inherit;
 }
 
-.site-name {
+.link-name {
+  font-size: 12px;
+  margin: 0;
+}
+
+.link-description {
   font-size: 12px;
   margin: 0;
 }
