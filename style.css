@@ -3,7 +3,7 @@
   display: grid;
   margin: 0;
   justify-content: center;
-  grid-template: auto 1fr auto / min(100%, 420px);
+  grid-template: auto 1fr auto / min(100dvw, 420px);
   min-height: 100dvh;
 }
 
