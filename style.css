@@ -5,6 +5,7 @@
   justify-content: center;
   grid-template: auto 1fr auto / min(100dvw, 420px);
   min-height: 100dvh;
+  overflow: hidden;
 }
 
 .header {
