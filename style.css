@@ -3,7 +3,8 @@
   display: grid;
   margin: 0;
   justify-content: center;
-  grid-template-columns: min(100%, 420px);
+  grid-template: auto 1fr auto / min(100%, 420px);
+  min-height: 100dvh;
 }
 
 .header {
@@ -96,6 +97,10 @@
   );
 }
 
+.icon-container:has(.youtube) {
+  background: #fff;
+}
+
 .icon {
   position: absolute;
 }
@@ -106,17 +111,22 @@
 }
 
 .twitcasting {
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.youtube {
+  height: 35px;
+  width: 35px;
 }
 
 .link-name {
-  font-size: 12px;
+  font-size: 11px;
   margin: 0;
 }
 
 .link-description {
-  font-size: 12px;
+  font-size: 11px;
   margin: 0;
 }
 
