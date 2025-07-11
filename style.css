@@ -5,6 +5,7 @@
   justify-content: center;
   grid-template: auto 1fr auto / min(100%, 420px);
   min-height: 100dvh;
+  padding: 0 12px;
 }
 
 .header {
@@ -57,10 +58,6 @@
 .main {
   display: grid;
   gap: 18px;
-  padding: 0 12px;
-  overflow: hidden;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .list {
