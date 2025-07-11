@@ -1,3 +1,93 @@
 .body {
   background: #f1ebdf;
+  display: grid;
+  margin: 0;
+  justify-content: center;
+  grid-template-columns: min(100%, 420px);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image-container {
+  height: 84px;
+  width: 84px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  background: #fff;
+  padding: 9px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgb(0 0 0/0.13);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  color: #000;
+  text-decoration: none;
+}
+
+.icon-container {
+  border-radius: 6px;
+  height: 50px;
+  position: relative;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container:has(.x) {
+  background: #000;
+}
+
+.icon-container:has(.twitcasting) {
+  background: linear-gradient(
+    135deg,
+    rgb(8 146 253 / 1),
+    rgb(8 188 209 / 1) 75%,
+    rgb(8 230 159 / 1)
+  );
+}
+
+.icon {
+  position: absolute;
+}
+
+.x {
+  height: 25px;
+  width: 25px;
+}
+
+.twitcasting {
+  height: inherit;
+  width: inherit;
+}
+
+.site-name {
+  font-size: 12px;
+  margin: 0;
 }
